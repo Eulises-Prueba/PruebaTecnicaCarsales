@@ -1,11 +1,11 @@
 Prueba Práctica
 Con esta prueba buscamos evaluar sus conocimientos técnicos en el área de desarrollo, para ello contara con 24 horas para realizar los siguientes puntos:
 
-• Ingrese o cree una cuenta de github
-• Cree un repositorio llamado PruebaTecnicaCarsales
-• Usando la siguiente API: https://rickandmortyapi.com/documentation/#rest
-• Cree una aplicación angular, basada en sus buenas prácticas, que sea capaz de extraer datos desde el api (al menos los episodios) y desplegarlos en la forma que usted estime conveniente para el contenido recibido. Aplique la arquitectura Backend for frontend(BFF) usando .Net Core para el consumo de los servicios.
-• Tome en consideración los siguientes criterios para el desarrollo de su ejercicio:
+- Ingrese o cree una cuenta de github
+- Cree un repositorio llamado PruebaTecnicaCarsales
+- Usando la siguiente API: https://rickandmortyapi.com/documentation/#rest
+- Cree una aplicación angular, basada en sus buenas prácticas, que sea capaz de extraer datos desde el api (al menos los episodios) y desplegarlos en la forma que usted estime conveniente para el contenido recibido. Aplique la arquitectura Backend for frontend(BFF) usando .Net Core para el consumo de los servicios.
+- Tome en consideración los siguientes criterios para el desarrollo de su ejercicio:
 
 1. Generales
 - Se debe agregar paginación al momento de listar los resultados
