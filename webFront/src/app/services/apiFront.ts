@@ -19,7 +19,6 @@ export class ApiFront {
   }
 
   getDetalle(id: number): Observable<EpisodioDetalle> {
-    let queryParams = new HttpParams();
     return this.http.get<EpisodioDetalle>(`api/episode/${id}`);
   }
 }
