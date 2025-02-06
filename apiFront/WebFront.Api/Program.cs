@@ -56,6 +56,17 @@ if (bCompress)
     builder.Services.Configure<GzipCompressionProviderOptions>(options => { options.Level = CompressionLevel.SmallestSize; });
 }
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAllOrigins",
+        policyBuilder => policyBuilder
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+            .AllowAnyOrigin()
+            .SetIsOriginAllowed(_ => true)
+    );
+});
+
 var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
@@ -77,6 +88,7 @@ else
 if (bCompress)
     app.UseResponseCompression();
 
+app.UseCors("AllowAllOrigins");
 app.UseResponseCaching();
 app.UseAuthorization();
 app.MapControllers();

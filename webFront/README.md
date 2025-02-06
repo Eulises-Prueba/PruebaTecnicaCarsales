@@ -2,7 +2,7 @@
 Descargar e instalar Node.js v22.13.1
 
 # Api Front
-Cambiar url de api en archivo 'proxy.conf.json' parametro 'target' usado por CORS.
+Cambiar url de api en archivo 'environment' parámetro 'urlApiFront'
 
 # Test
 Luego en la carpeta del proyecto ejecutar en el Terminal:\
