@@ -1,0 +1,6 @@
+<button (click)="page.first()" [disabled]="page.isFirst"><<</button>
+<button (click)="page.prev()" [disabled]="page.isFirst"><</button>
+<input appPaginas #page="appPaginas" [totalPaginas]="totalPaginas()" (pageChange)="changePage($event)" />
+<span> / {{ page.totalPaginas() }}</span>
+<button (click)="page.next()" [disabled]="page.isLast">></button>
+<button (click)="page.last()" [disabled]="page.isLast">>></button>

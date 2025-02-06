@@ -1,0 +1,18 @@
+<table>
+    <thead>
+        <th>Episodio</th>
+        <th>Nombre</th>
+    </thead>
+    <tbody>
+    @if(listado() != undefined) {
+        @for (item of listado().results; track item.id) {
+            <tr appHighlight>
+                <td>
+                    <a [routerLink] = "['/detalle', item.id]">{{ item.episode }}</a>
+                </td>
+                <td>{{ item.name }}</td>
+            </tr>
+        }
+    }
+    </tbody>
+</table>

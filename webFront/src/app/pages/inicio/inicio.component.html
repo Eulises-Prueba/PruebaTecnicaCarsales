@@ -1,0 +1,6 @@
+@defer (on idle; hydrate on viewport; when episodios != undefined) {
+    <app-tabla [listado]="episodios"></app-tabla>
+    <app-paginado [totalPaginas]="paginas" (change)="onPageChange($event)" ></app-paginado>
+} @placeholder (minimum 400ms) {
+    <div>Cargando...</div>
+}

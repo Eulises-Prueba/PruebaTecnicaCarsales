@@ -1,0 +1,6 @@
+<a [routerLink] = "['/']"><button><<</button></a>
+@defer (on idle; hydrate on viewport; when item != undefined) {
+    <app-info [detalle]="item"></app-info>
+} @placeholder (minimum 400ms) {
+    <div>Cargando...</div>
+}
